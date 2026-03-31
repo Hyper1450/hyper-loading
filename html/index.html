@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="slideshow" class="slideshow" aria-hidden="true"></div>
+    <div class="overlay" aria-hidden="true"></div>
+
+
+    <main class="screen">
+
+
+        <header class="top-bar">
+            <div class="brand">
+                <img id="logo" class="brand__logo" src="" alt="Logo">
+                <div class="brand__text">
+                    <span id="serverName" class="brand__name"></span>
+                    <span id="serverTagline" class="brand__tagline"></span>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="center-content">
+            <p id="welcomeText" class="welcome-text"></p>
+        </section>
+
+
+        <footer class="bottom-bar">
+
+
+            <div id="socials" class="socials"></div>
+
+
+            <div id="loadingArea" class="loading-area">
+                <div class="loading-bar">
+                    <div id="loadingProgress" class="loading-bar__fill"></div>
+                </div>
+                <span id="loadingText" class="loading-label"></span>
+            </div>
+        </footer>
+
+
+        <div class="music-hub" id="musicHub">
+            <div class="music-hub__info">
+                <div class="music-hub__eq" id="musicEq">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <span class="music-hub__title" id="musicTitle">Loading…</span>
+            </div>
+            <div class="music-hub__controls">
+                <button class="music-btn" id="btnPrev" aria-label="Previous track" title="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 6h2v12H6V6zm3.5 6 8.5 6V6l-8.5 6z" />
+                    </svg>
+                </button>
+                <button class="music-btn music-btn--play" id="btnPlayPause" aria-label="Play / Pause"
+                    title="Play / Pause">
+                    <svg id="iconPlay" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7L8 5z" />
+                    </svg>
+                    <svg id="iconPause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                </button>
+                <button class="music-btn" id="btnNext" aria-label="Next track" title="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 18l8.5-6L6 6v12zm10-12v12h2V6h-2z" />
+                    </svg>
+                </button>
+                <button class="music-btn music-btn--small" id="btnVolume" aria-label="Mute / Unmute"
+                    title="Mute / Unmute">
+                    <svg id="iconVolumeOn" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 8.5v7a4.49 4.49 0 002.5-3.5zM14 3.23v2.06a7.007 7.007 0 010 13.42v2.06A9.02 9.02 0 0021 12 9.02 9.02 0 0014 3.23z" />
+                    </svg>
+                    <svg id="iconVolumeOff" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                        <path
+                            d="M16.5 12A4.5 4.5 0 0014 8.5v2.09l2.44 2.44c.03-.17.06-.34.06-.53zm2.5 0a7 7 0 01-.57 2.79l1.5 1.5A8.93 8.93 0 0021 12a9.02 9.02 0 00-7-8.77v2.06A7.007 7.007 0 0119 12zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25a6.97 6.97 0 01-2.25 1.25v2.06a8.99 8.99 0 003.69-2.06l1.58 1.58L21 19.73l-1-1L4.27 3zM12 4l-2.16 2.16L12 8.29V4z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
